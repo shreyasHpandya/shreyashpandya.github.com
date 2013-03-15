@@ -1,0 +1,9 @@
+
+http://shreyashpandya.github.com/index.html
+http://shreyashpandya.github.com/tags.html
+http://shreyashpandya.github.com/pages.html
+http://shreyashpandya.github.com/categories.html
+http://shreyashpandya.github.com/rss.xml
+http://shreyashpandya.github.com/sitemap.txt
+http://shreyashpandya.github.com/atom.xml
+http://shreyashpandya.github.com/archive.html
