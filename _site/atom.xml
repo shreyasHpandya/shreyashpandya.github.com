@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Shreyas Pandya's Blog and other stuff</title>
- <link href="http://shreyashpandya.github.com/" rel="self"/>
- <link href="http://shreyashpandya.github.com"/>
- <updated>2013-03-16T01:41:27+05:30</updated>
- <id>http://shreyashpandya.github.com</id>
+ <link href="http://shreyaspandya.com/" rel="self"/>
+ <link href="http://shreyaspandya.com"/>
+ <updated>2013-03-16T02:06:51+05:30</updated>
+ <id>http://shreyaspandya.com</id>
  <author>
    <name>Shreyas Pandya</name>
    <email>blah@email.test</email>
