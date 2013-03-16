@@ -1,9 +1,0 @@
-
-http://shreyaspandya.com/index.html
-http://shreyaspandya.com/tags.html
-http://shreyaspandya.com/pages.html
-http://shreyaspandya.com/categories.html
-http://shreyaspandya.com/rss.xml
-http://shreyaspandya.com/sitemap.txt
-http://shreyaspandya.com/atom.xml
-http://shreyaspandya.com/archive.html
