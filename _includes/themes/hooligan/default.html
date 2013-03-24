@@ -48,9 +48,9 @@
 
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 
-
           <div class="nav-collapse">
             <ul class="nav">
+              <li><a href="">{{site.tagline}}</a></li>
               {% assign pages_list = site.pages %}
               {% assign group = 'navigation' %}
               {% include JB/pages_list %}
