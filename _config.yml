@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Shreyas Pandya
-tagline: "music, coding and better planet"  # three thing I am passionate about
+tagline: "coding, music and better planet"  # three thing I am passionate about
 author :
   name : Shreyas Pandya
   email : blah@email.test
