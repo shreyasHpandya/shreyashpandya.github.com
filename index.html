@@ -5,19 +5,23 @@ header : Home Page
 ---
 {% include JB/setup %}
 <div class="row">
-	<div class="span8">
-		{% assign posts_collate = site.posts %}
-		{% include JB/posts_collate %}
-	</div>
+	<div class="span2 offset3"></div>
 </div>
+<h2>Posts</h2>
 <div class="row">
-	<div class="span4">
-	  <section>
-        <h4>Browse Tags</h4>
-        <ul class="tag_box">
-          {% assign tags_list = site.tags %}  
-  			{% include JB/tags_list %}
-        </ul>
-      </section>
+	<div class="span8">
+		<ul>
+		  {% for post in site.posts %}
+		    <li><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&raquo;&nbsp;<small>published</small><span>&nbsp;{{ post.date | date_to_string }}</span></li>
+		    {{ post.content | strip_html | truncatewords: 75 }}
+		    <a href="{{ post.url }}">&nbsp;Read more&nbsp;&raquo;</a>
+		    <ul class="tag_box inline">
+		        {% assign tags_list = post.tags %}
+		        {% include JB/tags_list %}
+		    </ul>
+		    <br/><br/>
+		  {% endfor %}
+		</ul>
+
 	</div>
 </div>
