@@ -1,6 +1,122 @@
 ---
-theme :
-  name : hooligan
+author:
+ name: Shreyas Pandya
+ username: shreyasHpandya
+ gplus: 102469312111499890565
 ---
-{% include JB/setup %}
-{% include themes/hooligan/default.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- @see developer.mozilla.org/en-US/docs/Controlling_DNS_prefetching -->
+	<link rel="dns-prefetch" href="//r.twimg.com">
+	<link rel="dns-prefetch" href="//p.twitter.com">
+	<link rel="dns-prefetch" href="//cdn.api.twitter.com">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//platform.twitter.com">
+
+	<title>{{ page.title }}</title>
+
+	<link rel="stylesheet" href="/ui/style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+
+	<link rel="shortcut icon" href="/favicon.gif">
+	<link rel="apple-touch-icon-precomposed" href="/favicon.gif">
+
+	<link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/shreyaspandya" title="New posts &ndash; {{ page.author.name }}">
+
+	<link rel="start" href="http://shreyaspandya.com/" title="{{ page.author.name }}'s' Blog">
+
+	<!-- @see developer.mozilla.org/en-US/docs/Link_prefetching_FAQ -->
+	{% if page.previous %}
+	<link rel="prev" title="{{ page.previous.title }}" href="{{ page.previous.url }}">
+	{% endif %}
+	{% if page.next %}
+	<link rel="next" title="{{ page.next.title }}" href="{{ page.next.url }}">
+	{% endif %}
+
+	<!-- @see codular.com/google-author-image -->
+	<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}/posts">
+
+	<!-- @see ogp.me -->
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="{{ page.description }}" />
+	<meta property="og:url" content="{{ page.url }}">
+
+	<!-- @see dev.twitter.com/docs/cards -->
+	<meta property="twitter:title" content="{{ page.title }}">
+	<meta property="twitter:creator" content="@{{ page.author.username }}">
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:description" content="{{ page.description }}">
+	<meta property="twitter:url" content="{{ page.url }}">
+</head>
+<body class="{{ page.page-class }}">
+
+
+<div class="main wrapper">
+
+	<aside class="sidebar">
+
+		<a href="/" rel="index" class="site-name fx--opacity">
+			Shreyas.
+		</a>
+		<!-- /.site-name -->
+
+		<ul class="nav nav--stacked site-nav">
+			<li class="site-nav__archive"><a href="/archive/">Archive</a></li>
+			<li class="site-nav__projects"><a href="/projects/">Projects</a></li>
+			<li class="site-nav__contact"><a href="/contact/">Contact</a></li>
+		</ul>
+		<!-- /.nav.site-nav -->
+
+		<div class="sidebar__about">
+			<p>
+				Hello, I’m Shreyas. I’m 23 years old <b>programmer</b> form India. I like to
+				<a href="http://twitter.com/shreyasHpandya" class="hint--top hint--rounded" data-hint="Twitter">tweet</a>,
+				<a href="/archive/" class="hint--top hint--rounded" data-hint="Blog archive">write</a>,
+				<a href="http://github.com/shreyasHpandya" class="hint--top hint--rounded" data-hint="GitHub">share my code</a>.
+			</p>
+
+			<p class="twitter-follow">
+				<!-- @see dev.twitter.com/docs/follow-button -->
+				<a href="//twitter.com/{{ page.author.username }}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{{ page.author.username }}</a>
+				<a href="//twitter.com/{{ page.author.username }}" class="twitter-follow__button"><i class="s s--twitter"></i>Follow on Twiter</a>
+			</p>
+		</div>
+
+		<p class="footer">
+			{{ site.time | date: "%Y" }} &copy; <a href="http://twitter.com/shreyasHpandya">{{ page.author.name }}</a>. Grab <a href="http://feeds.feedburner.com/shreyaspandya">RSS</a>. View <a href="https://github.com/shreyasHpandya/shreyashpandya.github.com">source</a>.
+		</p>
+
+	</aside>
+	<!-- /.sidebar -->
+
+	<div class="content">
+		{{ content }}
+	</div>
+	<!-- /.content -->
+
+</div>
+<!-- /.main  -->
+
+<script>
+	var scripts = {
+		'twitter-wjs'   : '//platform.twitter.com/widgets.js',
+		'analytics'     : ('https:'==location.protocol?'//ssl':'//www') + '.google-analytics.com/ga.js'
+	}, script, _gaq=[['_setAccount','UA-39323748-1'],['_trackPageview']];
+
+	for (var id in scripts) {
+		script = document.createElement('script'); script.src = scripts[id];
+		script.id = id;script.type = 'text/javascript'; script.async = true;
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+	}
+</script>
+<script src="/ui/js/jquery.js"></script>
+<script src="/ui/js/plugins.js"></script>
+<script src="/ui/js/script.js"></script>
+</body>
+</html>

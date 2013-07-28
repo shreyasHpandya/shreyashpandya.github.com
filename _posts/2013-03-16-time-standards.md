@@ -4,9 +4,8 @@ title: "Time Standards"
 tagline: "confusion that never stops"
 description: "explanation of common time standards and relation between them"
 category: 
-tags: ["time standards", "science"]
+tags: ["time-standards", "science"]
 ---
-{% include JB/setup %}
 
 We humans have this sick compulsion to keep track of time. Many time standards have emerged while trying to come up with standard ways to measure time in due course of existence of human civilization. Some independently and others successively.
 
