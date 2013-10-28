@@ -8,7 +8,7 @@ tags: [motivation, entrepreneurship]
 > For well you know that it's a fool who plays it cool  
 > By making his world a little colder.
 >
-> -Beatle's "Hey Jude"
+> <small>Beatle's "Hey Jude"</small>
 
 This guy just nailed it in this post, [Do your own thing](http://articles.marco.org/261)
 

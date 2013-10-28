@@ -13,8 +13,9 @@ There are so many time standards in use for various purposes. I have tried to si
 
 Wikipedia defines time standard as
 
-> *Time standard is a specification for measuring time: either the rate at which time passes; or points in time; or both.*  
-> *-wiki*
+> Time standard is a specification for measuring time: either the rate at which time passes; or points in time; or both.  
+> 
+> <small>wiki</small>
 
 Usually the time standard gives their own version of Second or Day or both. So in order to compare each time standard we just have to see what a Day or Second means according to that standard. What follows is the list of few often mentioned time standards and its exact details.
 
