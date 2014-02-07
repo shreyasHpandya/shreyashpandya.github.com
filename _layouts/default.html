@@ -106,7 +106,7 @@ author:
 <script>
 	var scripts = {
 		'twitter-wjs'   : '//platform.twitter.com/widgets.js',
-		'analytics'     : ('https:'==location.protocol?'//ssl':'//www') + '.google-analytics.com/ga.js'
+		'analytics'     : ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'
 	}, script, _gaq=[['_setAccount','UA-39323748-1'],['_trackPageview']];
 
 	for (var id in scripts) {
