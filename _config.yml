@@ -1,3 +1,4 @@
 paginate: 6
 production_url: http://shreyaspandya.com
 markdown: kramdown
+paginate_path: /page/:num
