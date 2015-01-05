@@ -7,7 +7,7 @@ date: 2015-01-04 18:53
 
 
 
-So far the career has been a tale of progress starting at a minimum wage in tier-I city in India to getting decent enough wage to live comfortably (almost) after three years and two jobs. It did make my parents proud. But I am not completely happy with the current situation. I mean yes I am kind of enjoying the better standard of living and all, the freedom of making so called hedonistic choices in life. But I still feel meaninglessness in life. A sense of no achievement. Like living life without superior goal. And if I compare what I thought in college where I would be by now to whare I actually am now, it makes me wanna die. I have reached an impasse in life. What follows is my ideation on plan to overcome it.
+So far the career has been a tale of progress starting at a minimum wage in tier-I city in India to getting decent enough wage to live comfortably (almost) after three years and two jobs. It did make my parents proud. But I am not completely happy with the current situation. I mean yes I am kind of enjoying the better standard of living and all, the freedom of making so called hedonistic choices in life. But I still feel off course in life or without course at all. A sense of no achievement. Like living life without superior goal. And if I compare what I thought in college where I would be by now to whare I actually am now, it makes me wanna die. I have reached an impasse in life. What follows is my ideation on plan to overcome it.
 
 So people of my age who are living decent life in a city belongs to following (oversimplified and stereotyped) categories
 
