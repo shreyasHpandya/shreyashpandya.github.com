@@ -1,11 +1,12 @@
 ---
 author:
- name: Shreyas Pandya
- username: shreyasHpandya
- gplus: 102469312111499890565
+name: Shreyas Pandya
+username: shreyasHpandya
+gplus: 102469312111499890565
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -26,7 +27,8 @@ author:
 	<link rel="shortcut icon" href="/favicon.gif">
 	<link rel="apple-touch-icon-precomposed" href="/favicon.gif">
 
-	<link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/shreyaspandya" title="New posts &ndash; {{ page.author.name }}">
+	<link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/shreyaspandya"
+		title="New posts &ndash; {{ page.author.name }}">
 
 	<link rel="start" href="http://shreyaspandya.com/" title="{{ page.author.name }}'s' Blog">
 
@@ -54,72 +56,80 @@ author:
 	<meta property="twitter:description" content="{{ page.description }}">
 	<meta property="twitter:url" content="{{ page.url }}">
 </head>
+
 <body class="{{ page.page-class }}">
 
 
-<div class="main wrapper">
+	<div class="main wrapper">
 
-	<aside class="sidebar">
+		<aside class="sidebar">
 
-		<a href="/" rel="index" class="site-name fx--opacity">
-			Shreyas.
-		</a>
-		<!-- /.site-name -->
+			<a href="/" rel="index" class="site-name fx--opacity">
+				Shreyas.
+			</a>
+			<!-- /.site-name -->
 
-		<ul class="nav nav--stacked site-nav">
-			<li class="site-nav__archive"><a href="/archive/">Archive</a></li>
-			<li class="site-nav__projects"><a href="/projects/">Projects</a></li>
-			<li class="site-nav__contact"><a href="/contact/">Contact</a></li>
-		</ul>
-		<!-- /.nav.site-nav -->
+			<!-- <ul class="nav nav--stacked site-nav">
+				<li class="site-nav__archive"><a href="/archive/">Archive</a></li>
+				<li class="site-nav__projects"><a href="/projects/">Projects</a></li>
+				<li class="site-nav__contact"><a href="/contact/">Contact</a></li>
+			</ul> -->
+			<!-- /.nav.site-nav -->
 
-		<div class="sidebar__about">
-			<p>
-				Hello, I’m Shreyas. I’m a <b>programmer</b> from India. I like to
-				<a href="http://twitter.com/shreyasHpandya" class="hint--top hint--rounded" data-hint="Twitter">tweet</a>,
-				<a href="/archive/" class="hint--top hint--rounded" data-hint="Blog archive">write</a>,
-				<a href="http://github.com/shreyasHpandya" class="hint--top hint--rounded" data-hint="GitHub">share my code</a>.
+			<div class="sidebar__about">
+				<p>
+					Hello, I’m Shreyas. I’m a <b>programmer</b> from India. I like to
+					<a href="http://twitter.com/shreyasHpandya" class="hint--top hint--rounded"
+						data-hint="Twitter">tweet</a>,
+					<a href="https://medium.com/@pandyashreyas1" class="hint--top hint--rounded"
+						data-hint="Blog archive">write</a>,
+					<a href="http://github.com/shreyasHpandya" class="hint--top hint--rounded" data-hint="GitHub">
+						and Code
+					</a>.
+				</p>
+
+				<p class="twitter-follow">
+					<!-- @see dev.twitter.com/docs/follow-button -->
+					<a href="//twitter.com/{{ page.author.username }}" class="twitter-follow-button"
+						data-show-count="false" data-size="large">Follow @{{ page.author.username }}</a>
+					<a href="//twitter.com/{{ page.author.username }}" class="twitter-follow__button"><i
+							class="s s--twitter"></i>Follow on Twiter</a>
+					<a class="twitter-follow-button" href="https://twitter.com/{{ page.author.username }}">
+						Follow @shreyasHpandya</a>
+				</p>
+			</div>
+
+			<p class="footer">
+				{{ site.time | date: "%Y" }} &copy; <a href="http://twitter.com/shreyasHpandya">{{ page.author.name
+					}}</a>
 			</p>
 
-			<p class="twitter-follow">
-				<!-- @see dev.twitter.com/docs/follow-button -->
-				<a href="//twitter.com/{{ page.author.username }}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{{ page.author.username }}</a>
-				<a href="//twitter.com/{{ page.author.username }}" class="twitter-follow__button"><i class="s s--twitter"></i>Follow on Twiter</a>
-				<a class="twitter-follow-button"
-				  href="https://twitter.com/{{ page.author.username }}">
-				Follow @shreyasHpandya</a>
-			</p>
+		</aside>
+		<!-- /.sidebar -->
+
+		<div class="content">
+			{{ content }}
 		</div>
+		<!-- /.content -->
 
-		<p class="footer">
-			{{ site.time | date: "%Y" }} &copy; <a href="http://twitter.com/shreyasHpandya">{{ page.author.name }}</a>. Grab <a href="http://feeds.feedburner.com/shreyaspandya">RSS</a>. View <a href="https://github.com/shreyasHpandya/shreyashpandya.github.com">source</a>.
-		</p>
-
-	</aside>
-	<!-- /.sidebar -->
-
-	<div class="content">
-		{{ content }}
 	</div>
-	<!-- /.content -->
+	<!-- /.main  -->
 
-</div>
-<!-- /.main  -->
+	<script>
+		var scripts = {
+			'twitter-wjs': '//platform.twitter.com/widgets.js',
+			'analytics': ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'
+		}, script, _gaq = [['_setAccount', 'UA-39323748-1'], ['_trackPageview']];
 
-<script>
-	var scripts = {
-		'twitter-wjs'   : '//platform.twitter.com/widgets.js',
-		'analytics'     : ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'
-	}, script, _gaq=[['_setAccount','UA-39323748-1'],['_trackPageview']];
-
-	for (var id in scripts) {
-		script = document.createElement('script'); script.src = scripts[id];
-		script.id = id;script.type = 'text/javascript'; script.async = true;
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-	}
-</script>
-<script src="/ui/js/jquery.js"></script>
-<script src="/ui/js/plugins.js"></script>
-<script src="/ui/js/script.js"></script>
+		for (var id in scripts) {
+			script = document.createElement('script'); script.src = scripts[id];
+			script.id = id; script.type = 'text/javascript'; script.async = true;
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+		}
+	</script>
+	<script src="/ui/js/jquery.js"></script>
+	<script src="/ui/js/plugins.js"></script>
+	<script src="/ui/js/script.js"></script>
 </body>
+
 </html>

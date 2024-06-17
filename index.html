@@ -4,41 +4,40 @@ title: Shreyas Pandya - a programmer
 page-class: page--home
 ---
 
-<p>
-	<strong> 
+<!-- <p>
+	<strong>
 		I have moved blogs to <a href="https://medium.com/@pandyashreyas1">medium.com</a>.
-	</strong> 
+	</strong>
 	Please follow me on medium for latest entries
-</p>
+</p> -->
 <ul class="posts">
-	{% for post in paginator.posts %}
+	<!-- {% for post in paginator.posts %}
 	<li>
 		<h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		<div class="post__date">{{ post.date | date: "%d %B, %Y" }}</div>
 	</li>
-	{% endfor %}
+	{% endfor %} -->
 </ul>
 <!-- /.posts -->
 
-<ul class="nav  pagination">
+<!-- <ul class="nav  pagination">
 	<li class="pagination__prev">
 		{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
-			<a href="/">Previous</a>
+		<a href="/">Previous</a>
 		{% else %}
-			<a href="/page/{{paginator.previous_page}}">Previous</a>
+		<a href="/page/{{paginator.previous_page}}">Previous</a>
 		{% endif %}
 		{% else %}
-			Previous
-		{% endif %}
-	</li><!--
-
- --><li class="pagination__next">
-		{% if paginator.next_page %}
-			<a href="/page/{{paginator.next_page}}">Next</a>
-		{% else %}
-			Next
+		Previous
 		{% endif %}
 	</li>
-</ul>
+	<li class="pagination__next">
+		{% if paginator.next_page %}
+		<a href="/page/{{paginator.next_page}}">Next</a>
+		{% else %}
+		Next
+		{% endif %}
+	</li>
+</ul> -->
 <!-- /.pagination -->
